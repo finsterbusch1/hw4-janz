@@ -58,6 +58,12 @@ NAICS_DATA = {
     "623220": ("Residential Mental Health Facilities", "revenue_millions", 19.5),
     "623311": ("Continuing Care Retirement Communities", "revenue_millions", 35.0),
     "623312": ("Assisted Living Facilities (except CCRCs)", "revenue_millions", 19.5),
+    # --- Wholesale Trade - Medical Equipment (423) ---
+    "423450": ("Medical, Dental & Hospital Equipment & Supplies Merchant Wholesalers", "revenue_millions", 200.0),
+    # --- Health & Personal Care Stores (446) ---
+    "446110": ("Pharmacies & Drug Stores", "revenue_millions", 40.0),
+    "446191": ("Food (Health) Supplement Stores", "revenue_millions", 8.5),
+    "446199": ("All Other Health & Personal Care Stores", "revenue_millions", 8.5),
     # --- Medical Devices & Supplies (339) ---
     "339112": ("Surgical & Medical Instrument Manufacturing", "employees", 1000),
     "339113": ("Surgical Appliance & Supplies Manufacturing", "employees", 750),
