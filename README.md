@@ -33,9 +33,9 @@ compute these without hallucinating outdated or wrong values
     └── naics-eligibility-check/
         ├── SKILL.md                        # Skill instructions + activation logic
         ├── scripts/
-        │   └── check\\\_naics.py             # Deterministic size standard lookup
+        │   └── check\\\\\\\_naics.py             # Deterministic size standard lookup
         └── references/
-            └── sba-size-standards.md      # Reference doc for SBA rules \\\& set-aside types
+            └── sba-size-standards.md      # Reference doc for SBA rules \\\\\\\& set-aside types
 README.md
 ```
 
@@ -57,23 +57,23 @@ README.md
 
 ```bash
 # Basic lookup (no size determination)
-python .agents/skills/naics-eligibility-check/scripts/check\\\_naics.py 622110
+python .agents/skills/naics-eligibility-check/scripts/check\\\\\\\_naics.py 622110
 
 # With 3-year average revenue (most medical codes use revenue-based standards)
-python .agents/skills/naics-eligibility-check/scripts/check\\\_naics.py 622110 --revenue 36
+python .agents/skills/naics-eligibility-check/scripts/check\\\\\\\_naics.py 622110 --revenue 36
 
 # With employee count (manufacturing codes use employee-based standards)
-python .agents/skills/naics-eligibility-check/scripts/check\\\_naics.py 339113 --employees 160
+python .agents/skills/naics-eligibility-check/scripts/check\\\\\\\_naics.py 339113 --employees 160
 
 # With set-aside type
-python .agents/skills/naics-eligibility-check/scripts/check\\\_naics.py 622110 --revenue 36 --setaside SDVOSB
+python .agents/skills/naics-eligibility-check/scripts/check\\\\\\\_naics.py 622110 --revenue 36 --setaside SDVOSB
 ```
 
 \---
 
 ## What the Script Does
 
-`check\\\_naics.py` is a self-contained Python script that:
+`check\\\\\\\_naics.py` is a self-contained Python script that:
 
 1. Looks up the provided 6-digit NAICS code against an embedded SBA size standards table
 (focused on medical, professional services, defense, and staffing sectors)
@@ -115,11 +115,9 @@ outside this set return a "not found" error with a link to the full SBA table
 * The script does not query SAM.gov live; certification status must be verified separately
 * Revenue input should always be the SBA-defined 3-year average, not a single year
 
-\---
+
 
 ## \## Video Walkthrough
-
-## 
 
 ## 🎥 \[Walkthrough Video](https://youtu.be/e\_MWratvBOM)
 
@@ -127,6 +125,4 @@ outside this set return a "not found" error with a link to the full SBA table
 JANZ Corporation — SDVOSB, Dual SBA/VA Certified, Federal Medical Contracting*
 
 
-
-*https://youtu.be/e\_MWratvBOM*
 
